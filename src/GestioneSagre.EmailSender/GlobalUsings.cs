@@ -1,0 +1,10 @@
+﻿global using GestioneSagre.EmailSender.Options;
+global using GestioneSagre.EmailSender.Services;
+global using GestioneSagre.Logger.Service;
+global using MailKit.Net.Smtp;
+global using MailKit.Security;
+global using Microsoft.AspNetCore.Identity.UI.Services;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Options;
+global using MimeKit;

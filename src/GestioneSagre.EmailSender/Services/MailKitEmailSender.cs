@@ -2,13 +2,13 @@
 
 public class MailKitEmailSender : IEmailClient
 {
-    private readonly IOptionsMonitor<SmtpOptions> smtpOptionsMonitor;
     private readonly ILoggerService loggerService;
+    private readonly IOptionsMonitor<SmtpOptions> smtpOptionsMonitor;
 
-    public MailKitEmailSender(IOptionsMonitor<SmtpOptions> smtpOptionsMonitor, ILoggerService loggerService)
+    public MailKitEmailSender(ILoggerService loggerService, IOptionsMonitor<SmtpOptions> smtpOptionsMonitor)
     {
-        this.smtpOptionsMonitor = smtpOptionsMonitor;
         this.loggerService = loggerService;
+        this.smtpOptionsMonitor = smtpOptionsMonitor;
     }
 
     public Task SendEmailAsync(string email, string subject, string htmlMessage)

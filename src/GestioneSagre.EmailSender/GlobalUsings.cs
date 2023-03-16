@@ -1,5 +1,6 @@
 ﻿global using GestioneSagre.EmailSender.Options;
 global using GestioneSagre.EmailSender.Services;
+global using GestioneSagre.Logger.Extensions;
 global using GestioneSagre.Logger.Service;
 global using MailKit.Net.Smtp;
 global using MailKit.Security;

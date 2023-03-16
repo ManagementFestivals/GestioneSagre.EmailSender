@@ -51,7 +51,6 @@ public class MailKitEmailSender : IEmailClient
             await client.DisconnectAsync(true, token);
 
             loggerService.SaveLogInformation($"Message successfully sent to the email address {recipientEmail}");
-
             return true;
         }
         catch

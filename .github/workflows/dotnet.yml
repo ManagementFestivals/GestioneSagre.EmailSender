@@ -3,7 +3,7 @@ name: Publish
 on:
   push:
     branches: [ main ]
-    paths: [ 'src/GestioneSagre.Logger/**' ]
+    paths: [ 'src/GestioneSagre.EmailSender/**' ]
   workflow_dispatch:
 
 env:

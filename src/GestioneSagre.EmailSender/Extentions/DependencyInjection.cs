@@ -9,9 +9,6 @@ public static class DependencyInjection
             .AddSingleton<IEmailClient, MailKitEmailSender>();
 
         services
-            .AddSerilogServices();
-
-        services
             .Configure<SmtpOptions>(configuration.GetSection("Smtp"));
 
         return services;
